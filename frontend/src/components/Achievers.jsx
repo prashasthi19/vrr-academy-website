@@ -1,100 +1,72 @@
 export default function Achievers() {
-  const achievements = [
-    {
-      rank: 'AIR 1',
-      name: 'Rahul Singh',
-      exam: 'JEE Advanced 2023',
-      score: '342/396',
-      image: '👨‍🎓'
-    },
-    {
-      rank: 'AIR 5',
-      name: 'Priya Sharma',
-      exam: 'NEET 2023',
-      score: '710/720',
-      image: '👩‍🎓'
-    },
-    {
-      rank: 'AIR 12',
-      name: 'Arjun Patel',
-      exam: 'JEE Mains 2023',
-      score: '298/300',
-      image: '👨‍🎓'
-    },
-    {
-      rank: 'AIR 8',
-      name: 'Neha Gupta',
-      exam: 'NEET 2023',
-      score: '705/720',
-      image: '👩‍🎓'
-    }
-  ]
-
   return (
     <section id="achievements" className="py-16 bg-gray">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-darkText mb-4">
-            🏆 Our Achievers
+            🏆 Our Achievements
           </h2>
           <p className="text-xl text-gray-600">
-            Meet the success stories from VRR Academy
+            Proven track record of success
           </p>
         </div>
 
-        {/* Achievement Cards Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {achievements.map((achiever, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transform hover:scale-105 transition-all duration-300"
-            >
-              {/* Top Color Bar */}
-              <div className="h-1 bg-gradient-to-r from-primaryBlue to-darkBlue"></div>
-
-              {/* Content */}
-              <div className="p-6 text-center">
-                {/* Avatar */}
-                <div className="text-6xl mb-4">{achiever.image}</div>
-
-                {/* Rank Badge */}
-                <div className="inline-block px-3 py-1 bg-primaryBlue text-white rounded-full text-sm font-bold mb-3">
-                  {achiever.rank}
-                </div>
-
-                {/* Name */}
-                <h3 className="text-xl font-bold text-darkText mb-2">
-                  {achiever.name}
-                </h3>
-
-                {/* Exam */}
-                <p className="text-sm text-gray-600 mb-2">
-                  {achiever.exam}
-                </p>
-
-                {/* Score */}
-                <div className="text-2xl font-bold text-primaryBlue">
-                  {achiever.score}
-                </div>
-              </div>
-            </div>
-          ))}
+        {/* Stats Section */}
+        <div className="grid md:grid-cols-3 gap-8 p-8 bg-white rounded-xl shadow-lg">
+          <div className="text-center hover:transform hover:scale-105 transition-all duration-300">
+            <p className="text-6xl font-bold bg-gradient-to-r from-primaryBlue to-darkBlue bg-clip-text text-transparent mb-2">5000+</p>
+            <p className="text-lg text-gray-600 font-semibold">Students Trained</p>
+            <p className="text-sm text-gray-500 mt-2">Across all programs</p>
+          </div>
+          <div className="text-center hover:transform hover:scale-105 transition-all duration-300">
+            <p className="text-6xl font-bold bg-gradient-to-r from-primaryBlue to-darkBlue bg-clip-text text-transparent mb-2">98%</p>
+            <p className="text-lg text-gray-600 font-semibold">Success Rate</p>
+            <p className="text-sm text-gray-500 mt-2">Proven results</p>
+          </div>
+          <div className="text-center hover:transform hover:scale-105 transition-all duration-300">
+            <p className="text-6xl font-bold bg-gradient-to-r from-primaryBlue to-darkBlue bg-clip-text text-transparent mb-2">500+</p>
+            <p className="text-lg text-gray-600 font-semibold">Top Rankings</p>
+            <p className="text-sm text-gray-500 mt-2">In JEE & NEET</p>
+          </div>
         </div>
 
-        {/* Stats Section */}
-        <div className="grid md:grid-cols-3 gap-8 mt-16 p-8 bg-white rounded-xl shadow-lg">
-          <div className="text-center">
-            <p className="text-5xl font-bold text-primaryBlue mb-2">5000+</p>
-            <p className="text-lg text-gray-600">Students Trained</p>
+        {/* Additional Info */}
+        <div className="grid md:grid-cols-2 gap-8 mt-12">
+          <div className="bg-white p-8 rounded-xl shadow-lg">
+            <h3 className="text-2xl font-bold text-darkText mb-4">📈 Year-on-Year Growth</h3>
+            <ul className="space-y-3 text-gray-600">
+              <li className="flex items-center gap-3">
+                <span className="text-primaryBlue font-bold">✓</span>
+                Consistent improvement in student performance
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="text-primaryBlue font-bold">✓</span>
+                High placement and success rates
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="text-primaryBlue font-bold">✓</span>
+                Growing student community
+              </li>
+            </ul>
           </div>
-          <div className="text-center">
-            <p className="text-5xl font-bold text-primaryBlue mb-2">98%</p>
-            <p className="text-lg text-gray-600">Success Rate</p>
-          </div>
-          <div className="text-center">
-            <p className="text-5xl font-bold text-primaryBlue mb-2">500+</p>
-            <p className="text-lg text-gray-600">Top Rankings</p>
+
+          <div className="bg-white p-8 rounded-xl shadow-lg">
+            <h3 className="text-2xl font-bold text-darkText mb-4">🎯 Our Excellence</h3>
+            <ul className="space-y-3 text-gray-600">
+              <li className="flex items-center gap-3">
+                <span className="text-primaryBlue font-bold">✓</span>
+                Expert faculty with proven track record
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="text-primaryBlue font-bold">✓</span>
+                Comprehensive study material & resources
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="text-primaryBlue font-bold">✓</span>
+                Personalized attention to every student
+              </li>
+            </ul>
           </div>
         </div>
       </div>

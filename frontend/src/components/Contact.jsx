@@ -65,10 +65,20 @@ export default function Contact() {
                 <div>
                   <h3 className="font-bold text-lg text-darkText mb-2">Address</h3>
                   <p className="text-gray-600">
-                    VRR Academy<br />
-                    123 Education Street<br />
-                    City, State 123456
+                    2nd Floor, Vinayaka Complex<br />
+                    11, Kodigehalli - Thindlu Main Road<br />
+                    near SVVK school, Sahakar Nagar<br />
+                    Kodigehalli, Bangalore<br />
+                    Karnataka, 560092
                   </p>
+                  <a 
+                    href="https://maps.google.com/?q=2nd+Floor,+Vinayaka+Complex,+11,+Kodigehalli,+Bangalore,+560092" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-block mt-3 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors text-sm font-semibold"
+                  >
+                    📍 View on Google Maps
+                  </a>
                 </div>
               </div>
 
@@ -78,8 +88,8 @@ export default function Contact() {
                 <div>
                   <h3 className="font-bold text-lg text-darkText mb-2">Phone</h3>
                   <p className="text-gray-600">
-                    +91-XXXXXXXXXX<br />
-                    +91-XXXXXXXXXX
+                    <a href="tel:9741187003" className="hover:text-primaryBlue transition-colors">+91-9741187003</a><br />
+                    <a href="tel:9740488001" className="hover:text-primaryBlue transition-colors">+91-9740488001</a>
                   </p>
                 </div>
               </div>
