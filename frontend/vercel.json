@@ -1,46 +1,8 @@
-# Vercel Configuration
-# Create vercel.json in project root
-
 {
-  "version": 2,
-  "public": true,
-  "env": {
-    "VITE_API_URL": "@api_url",
-    "VITE_APP_NAME": "VRR Academy"
-  },
-  "builds": [
-    {
-      "src": "frontend/package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "dist"
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    }
-  ],
-  "headers": [
+  "rewrites": [
     {
       "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, s-maxage=3600, stale-while-revalidate=86400"
-        }
-      ]
-    },
-    {
-      "source": "/assets/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
+      "destination": "/index.html"
     }
   ]
 }
