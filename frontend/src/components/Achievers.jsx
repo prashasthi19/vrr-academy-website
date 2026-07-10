@@ -8,6 +8,17 @@ export default function Achievers() {
             🏆 Our Achievements
           </h2>
           <p className="text-xl text-gray-600">
+            Celebrating student success at VRR Academy
+          </p>
+        </div>
+
+        <div className="flex justify-center">
+          <div className="w-full max-w-5xl rounded-3xl overflow-hidden shadow-2xl border border-gray-200">
+            <img
+              src="/VRR2.jpeg"
+              alt="VRR Academy achievers"
+              className="w-full h-auto object-cover"
+            />
             Proven track record of success
           </p>
         </div>

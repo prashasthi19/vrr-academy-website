@@ -46,8 +46,14 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-lg mb-4">Contact Us</h4>
             <ul className="space-y-2 text-sm text-gray-300">
-              <li>📍 123 Education St, City</li>
-              <li>📞 +91-XXXXXXXXXX</li>
+              <li>
+                📍 <a href="https://www.google.com/maps/search/?api=1&query=%2312,+1st+A+Cross,+Dhanalakshmi+Layout,+Virupakshapura,+Bengaluru,+Karnataka+560097" target="_blank" rel="noreferrer" className="underline hover:text-white">#12, 1st A Cross, Dhanalakshmi Layout</a>
+              </li>
+              <li>
+                📍 <a href="https://www.google.com/maps/search/?api=1&query=2nd+Floor,+Vinayaka+Complex,+11+Kodigehalli+-+Thindlu+Main+Road,+near+SVVK+school,+Sahakar+Nagar,+Kodigehalli,+Bangalore,+Karnataka+560092" target="_blank" rel="noreferrer" className="underline hover:text-white">2nd Floor, Vinayaka Complex, Kodigehalli</a>
+              </li>
+              <li>📞 <a href="tel:+919741187003" className="underline hover:text-white">+91-9741187003</a></li>
+              <li>📞 <a href="tel:+919740488001" className="underline hover:text-white">+91-9740488001</a></li>
               <li>📧 info@vrracademy.com</li>
               <li>🕐 9 AM - 6 PM (Mon-Sat)</li>
             </ul>

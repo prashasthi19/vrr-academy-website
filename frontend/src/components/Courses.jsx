@@ -3,13 +3,13 @@ export default function Courses() {
     {
       id: 1,
       title: 'Foundation Courses',
-      eligibility: 'Class 9-10',
-      description: 'Build strong fundamentals in Math, Physics, Chemistry and Biology. Perfect for students starting their competitive exam preparation.',
+      eligibility: 'Class 8-10',
+      description: 'Build strong fundamentals in Math, Physics, Chemistry and Biology for Class 8, 9, and 10 students. Ideal for early exam preparation and academic excellence.',
       features: [
-        'Conceptual clarity',
-        'Problem-solving skills',
-        'Weekly tests',
-        'One-on-one mentoring'
+        'Class 8 to 10 aligned curriculum',
+        'Conceptual clarity with practice',
+        'Weekly tests and performance tracking',
+        'Personalized mentoring and doubt support'
       ],
       icon: '📚',
       color: 'from-blue-400 to-blue-600'
@@ -96,10 +96,6 @@ export default function Courses() {
                   ))}
                 </div>
 
-                {/* CTA Button */}
-                <button className="w-full py-3 bg-primaryBlue text-white font-bold rounded-lg hover:bg-darkBlue transform hover:scale-105 transition-all duration-200">
-                  Learn More
-                </button>
               </div>
             </div>
           ))}

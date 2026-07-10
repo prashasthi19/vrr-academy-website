@@ -1,38 +1,27 @@
-import { useState } from 'react'
-
 export default function Testimonials() {
   const testimonials = [
     {
-      type: 'Student',
-      name: 'Rahul Singh',
-      text: 'VRR Academy helped me crack JEE Advanced with AIR 1. The structured approach and expert guidance made all the difference.',
-      rank: 'JEE AIR 1',
-      image: '👨‍🎓'
+      type: 'Google Review',
+      name: 'Google Reviewer',
+      text: 'V. V. Good n best quality education.',
+      rank: 'VRR Academy Sahakar Nagar',
+      image: '⭐'
     },
     {
-      type: 'Parent',
-      name: 'Mrs. Sharma',
-      text: 'We\'re extremely satisfied with the faculty and the progress our child has made. Highly recommended!',
-      rank: 'Parent of NEET Student',
-      image: '👩'
+      type: 'Google Review',
+      name: 'Google Reviewer',
+      text: 'Revisions are also done in a holistic manner.',
+      rank: 'VRR Academy Virupakshapura',
+      image: '⭐'
     },
     {
-      type: 'Student',
-      name: 'Neha Gupta',
-      text: 'The personalized mentoring and weekly tests helped me improve significantly. Great experience!',
-      rank: 'NEET AIR 8',
-      image: '👩‍🎓'
-    },
-    {
-      type: 'Student',
-      name: 'Arjun Patel',
-      text: 'Doubt clearing sessions are excellent. Faculty never leaves any question unanswered.',
-      rank: 'JEE AIR 12',
-      image: '👨‍🎓'
+      type: 'Google Review',
+      name: 'Google Reviewer',
+      text: 'Supportive learning environment and experienced educators.',
+      rank: 'VRR Academy Bengaluru',
+      image: '⭐'
     }
   ]
-
-  const [activeIndex, setActiveIndex] = useState(0)
 
   return (
     <section className="py-16 bg-gray">
