@@ -71,21 +71,6 @@ export default function WhyChooseUs() {
           ))}
         </div>
 
-        {/* Testimonial-style section */}
-        <div className="mt-16 bg-white p-8 rounded-xl shadow-lg border-l-4 border-primaryBlue">
-          <p className="text-xl text-gray-700 italic mb-4">
-            "VRR Academy transformed my understanding of complex concepts. The personalized mentoring and regular tests kept me motivated. I couldn't have achieved AIR 5 without their support."
-          </p>
-          <div className="flex items-center gap-4">
-            <div className="w-12 h-12 bg-primaryBlue rounded-full flex items-center justify-center text-white font-bold">
-              PS
-            </div>
-            <div>
-              <p className="font-bold text-darkText">Priya Sharma</p>
-              <p className="text-sm text-gray-600">NEET AIR 5 | 2023</p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   )

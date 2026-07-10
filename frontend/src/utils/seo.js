@@ -70,10 +70,10 @@ export const addOrganizationSchema = () => {
     ],
     address: {
       '@type': 'PostalAddress',
-      streetAddress: '123 Education Street',
-      addressLocality: 'City',
-      addressRegion: 'State',
-      postalCode: '123456',
+      streetAddress: '#12, 1st A Cross, Dhanalakshmi Layout',
+      addressLocality: 'Bengaluru',
+      addressRegion: 'Karnataka',
+      postalCode: '560097',
       addressCountry: 'IN'
     },
     contactPoint: {

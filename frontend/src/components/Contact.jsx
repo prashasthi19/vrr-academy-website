@@ -6,6 +6,7 @@ export default function Contact() {
     name: '',
     phone: '',
     class: '',
+    board: '',
     course: '',
     message: ''
   })
@@ -36,6 +37,7 @@ export default function Contact() {
           name: '',
           phone: '',
           class: '',
+          board: '',
           course: '',
           message: ''
         })
@@ -65,9 +67,32 @@ export default function Contact() {
                 <div>
                   <h3 className="font-bold text-lg text-darkText mb-2">Address</h3>
                   <p className="text-gray-600">
-                    VRR Academy<br />
-                    123 Education Street<br />
-                    City, State 123456
+                    <a
+                      href="https://www.google.com/maps/search/?api=1&query=%2312,+1st+A+Cross,+Dhanalakshmi+Layout,+Virupakshapura,+Bengaluru,+Karnataka+560097"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="underline hover:text-primaryBlue"
+                    >
+                      VRR Academy<br />
+                      #12, 1st A Cross, Dhanalakshmi Layout<br />
+                      Virupakshapura, Bengaluru<br />
+                      Karnataka 560097
+                    </a>
+                  </p>
+                  <p className="text-gray-600 mt-4">
+                    <a
+                      href="https://www.google.com/maps/search/?api=1&query=2nd+Floor,+Vinayaka+Complex,+11+Kodigehalli+-+Thindlu+Main+Road,+near+SVVK+school,+Sahakar+Nagar,+Kodigehalli,+Bangalore,+Karnataka+560092"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="underline hover:text-primaryBlue"
+                    >
+                      VRR Academy - Sahakar Nagar<br />
+                      2nd Floor, Vinayaka Complex<br />
+                      11, Kodigehalli - Thindlu Main Road<br />
+                      near SVVK school, Sahakar Nagar<br />
+                      Kodigehalli, Bangalore<br />
+                      Karnataka 560092
+                    </a>
                   </p>
                 </div>
               </div>
@@ -78,8 +103,8 @@ export default function Contact() {
                 <div>
                   <h3 className="font-bold text-lg text-darkText mb-2">Phone</h3>
                   <p className="text-gray-600">
-                    +91-XXXXXXXXXX<br />
-                    +91-XXXXXXXXXX
+                    <a href="tel:+919741187003" className="underline hover:text-primaryBlue">+91-9741187003</a><br />
+                    <a href="tel:+919740488001" className="underline hover:text-primaryBlue">+91-9740488001</a>
                   </p>
                 </div>
               </div>
@@ -101,9 +126,12 @@ export default function Contact() {
                 <div className="text-3xl">💬</div>
                 <div>
                   <h3 className="font-bold text-lg text-darkText mb-2">WhatsApp</h3>
-                  <button className="inline-block px-6 py-3 bg-green-500 text-white font-bold rounded-lg hover:bg-green-600 transition-colors">
+                  <a
+                    href="tel:+919740488001"
+                    className="inline-block px-6 py-3 bg-green-500 text-white font-bold rounded-lg hover:bg-green-600 transition-colors"
+                  >
                     Chat with us
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -112,7 +140,7 @@ export default function Contact() {
           {/* Right - Contact Form */}
           <div className="bg-gray p-8 rounded-xl">
             <h3 className="text-2xl font-bold text-darkText mb-6">
-              Quick Enquiry Form
+              Enroll Now
             </h3>
 
             <form onSubmit={handleSubmit} className="space-y-4">
@@ -169,6 +197,25 @@ export default function Contact() {
                 </select>
               </div>
 
+              {/* Board */}
+              <div>
+                <label className="block text-sm font-semibold text-darkText mb-2">
+                  Board *
+                </label>
+                <select
+                  name="board"
+                  value={formData.board}
+                  onChange={handleChange}
+                  required
+                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-primaryBlue transition-colors"
+                >
+                  <option value="">Select your board</option>
+                  <option value="State">State</option>
+                  <option value="CBSE">CBSE</option>
+                  <option value="ICSE">ICSE</option>
+                </select>
+              </div>
+
               {/* Course */}
               <div>
                 <label className="block text-sm font-semibold text-darkText mb-2">
@@ -206,7 +253,7 @@ export default function Contact() {
               {/* Success Message */}
               {success && (
                 <div className="p-4 bg-green-100 border-2 border-green-500 text-green-700 rounded-lg">
-                  ✅ Enquiry submitted successfully! We'll contact you soon.
+                  ✅ Enrollment submitted successfully! We'll contact you soon.
                 </div>
               )}
 
@@ -219,11 +266,15 @@ export default function Contact() {
 
               {/* Submit Button */}
               <button
-                type="submit"
+                type="button"
                 disabled={loading}
+                onClick={(e) => {
+                  e.preventDefault()
+                  window.location.href = 'tel:+919741187003'
+                }}
                 className="w-full py-3 bg-primaryBlue text-white font-bold rounded-lg hover:bg-darkBlue transform hover:scale-105 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {loading ? 'Submitting...' : 'Submit Enquiry'}
+                Submit Enrollment
               </button>
             </form>
           </div>

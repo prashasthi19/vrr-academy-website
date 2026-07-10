@@ -34,40 +34,25 @@ export default function Hero() {
               </div>
             </div>
 
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 pt-8">
-              <button className="px-8 py-4 bg-white text-primaryBlue font-bold rounded-lg hover:bg-gray transform hover:scale-105 transition-all duration-300 shadow-lg">
-                Start Your Journey
-              </button>
-              <button className="px-8 py-4 border-2 border-white text-white font-bold rounded-lg hover:bg-white hover:text-primaryBlue transform hover:scale-105 transition-all duration-300">
-                Book Free Demo
-              </button>
-            </div>
+            <p className="text-lg text-white font-semibold pt-8">
+              Start your learning journey now with VRR tutorials!
+            </p>
           </div>
 
-          {/* Right - Placeholder for Hero Image */}
+          {/* Right - Hero Image */}
           <div className="hidden md:flex items-center justify-center">
-            <div className="relative w-full h-96 bg-white bg-opacity-10 rounded-2xl flex items-center justify-center backdrop-blur-sm border border-lightBlue border-opacity-30 animate-pulse">
-              <div className="text-center">
-                <svg className="w-24 h-24 text-lightBlue mx-auto mb-4 opacity-50" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" />
-                </svg>
-                <p className="text-lightBlue text-sm">Hero Image - Add your banner here</p>
-              </div>
+            <div className="relative w-full h-96 overflow-hidden rounded-2xl border border-lightBlue border-opacity-30 shadow-2xl">
+              <img
+                src="/VRR1.jpeg"
+                alt="VRR Academy banner"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
       </div>
 
-      {/* Wave animation */}
-      <div className="absolute bottom-0 left-0 right-0">
-        <svg className="w-full h-auto" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path
-            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.87,168.19-17.28,250.6-.39C823.78,31,906.4,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-            fill="#ffffff"
-          ></path>
-        </svg>
-      </div>
+
     </section>
   )
 }
