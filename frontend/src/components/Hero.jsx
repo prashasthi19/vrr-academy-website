@@ -53,6 +53,7 @@ export default function Hero() {
       </div>
 
 
+      {/* Wave animation - REMOVED */}
     </section>
   )
 }

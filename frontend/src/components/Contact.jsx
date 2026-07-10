@@ -93,7 +93,20 @@ export default function Contact() {
                       Kodigehalli, Bangalore<br />
                       Karnataka 560092
                     </a>
+                    2nd Floor, Vinayaka Complex<br />
+                    11, Kodigehalli - Thindlu Main Road<br />
+                    near SVVK school, Sahakar Nagar<br />
+                    Kodigehalli, Bangalore<br />
+                    Karnataka, 560092
                   </p>
+                  <a 
+                    href="https://maps.google.com/?q=2nd+Floor,+Vinayaka+Complex,+11,+Kodigehalli,+Bangalore,+560092" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-block mt-3 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors text-sm font-semibold"
+                  >
+                    📍 View on Google Maps
+                  </a>
                 </div>
               </div>
 
@@ -105,6 +118,8 @@ export default function Contact() {
                   <p className="text-gray-600">
                     <a href="tel:+919741187003" className="underline hover:text-primaryBlue">+91-9741187003</a><br />
                     <a href="tel:+919740488001" className="underline hover:text-primaryBlue">+91-9740488001</a>
+                    <a href="tel:9741187003" className="hover:text-primaryBlue transition-colors">+91-9741187003</a><br />
+                    <a href="tel:9740488001" className="hover:text-primaryBlue transition-colors">+91-9740488001</a>
                   </p>
                 </div>
               </div>
