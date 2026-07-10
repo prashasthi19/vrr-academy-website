@@ -20,7 +20,7 @@ export default function Achievers() {
               className="w-full h-auto object-cover"
             />
             Proven track record of success
-          </p>
+          </div>
         </div>
 
         {/* Stats Section */}
