@@ -75,7 +75,7 @@ export default function Testimonials() {
             <p className="text-lg">Average Rating</p>
           </div>
           <div>
-            <p className="text-4xl font-bold mb-2">1000+</p>
+            <p className="text-4xl font-bold mb-2">100+</p>
             <p className="text-lg">Happy Reviews</p>
           </div>
           <div>

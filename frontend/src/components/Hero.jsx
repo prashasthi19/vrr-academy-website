@@ -9,9 +9,8 @@ export default function Hero() {
               <span className="text-lightBlue font-semibold text-sm">🌟 Welcome to Excellence</span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-              Your Path to
-              <span className="block text-lightBlue"> Academic Success</span>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-white">
+              Your Path to Academic Success
             </h1>
 
             <p className="text-lg text-gray-200 leading-relaxed">
@@ -25,11 +24,11 @@ export default function Hero() {
                 <p className="text-sm text-gray-300">Success Rate</p>
               </div>
               <div>
-                <p className="text-3xl font-bold text-lightBlue">5000+</p>
+                <p className="text-3xl font-bold text-lightBlue">500+</p>
                 <p className="text-sm text-gray-300">Students Trained</p>
               </div>
               <div>
-                <p className="text-3xl font-bold text-lightBlue">50+</p>
+                <p className="text-3xl font-bold text-lightBlue">10+</p>
                 <p className="text-sm text-gray-300">Expert Faculty</p>
               </div>
             </div>

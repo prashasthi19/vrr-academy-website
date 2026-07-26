@@ -130,8 +130,7 @@ export default function Contact() {
                 <div>
                   <h3 className="font-bold text-lg text-darkText mb-2">Email</h3>
                   <p className="text-gray-600">
-                    info@vrracademy.com<br />
-                    support@vrracademy.com
+                    vrr.career.acadmey@gmail.com
                   </p>
                 </div>
               </div>

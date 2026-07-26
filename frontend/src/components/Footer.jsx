@@ -54,8 +54,8 @@ export default function Footer() {
               </li>
               <li>📞 <a href="tel:+919741187003" className="underline hover:text-white">+91-9741187003</a></li>
               <li>📞 <a href="tel:+919740488001" className="underline hover:text-white">+91-9740488001</a></li>
-              <li>📧 info@vrracademy.com</li>
-              <li>🕐 9 AM - 6 PM (Mon-Sat)</li>
+              <li>📧 vrr.career.acadmey@gmail.com</li>
+              <li>🕐 4:30 PM - 9 PM</li>
             </ul>
           </div>
         </div>

@@ -41,6 +41,20 @@ export default function Courses() {
       ],
       icon: '🔬',
       color: 'from-green-400 to-green-600'
+    },
+    {
+      id: 4,
+      title: 'KCET Preparation',
+      eligibility: 'Class 11-12',
+      description: 'Specialized coaching for Karnataka CET examination. Master the exam pattern with focused strategies and comprehensive test series.',
+      features: [
+        'Expert guidance for Engineering and Medical streams',
+        'KCET specific test series',
+        'Topic-wise preparation material',
+        'Time management strategies'
+      ],
+      icon: '🎯',
+      color: 'from-orange-400 to-orange-600'
     }
   ]
 

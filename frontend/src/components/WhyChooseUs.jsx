@@ -21,11 +21,6 @@ export default function WhyChooseUs() {
       description: '98% success rate with consistent AIR rankings'
     },
     {
-      icon: '💻',
-      title: 'Digital Learning',
-      description: 'Access to recorded lectures and online study materials'
-    },
-    {
       icon: '🏆',
       title: 'Success Track Record',
       description: '5000+ successful students placed in top colleges'

@@ -31,11 +31,6 @@ export default function Features() {
       description: 'Regular mock tests simulating actual exam patterns'
     },
     {
-      icon: '📱',
-      title: 'Digital Access',
-      description: 'Online portal for lectures and assignments'
-    },
-    {
       icon: '🤝',
       title: 'Mentorship',
       description: 'Career guidance and personalized mentoring'
