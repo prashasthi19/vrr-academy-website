@@ -93,11 +93,6 @@ export default function Contact() {
                       Kodigehalli, Bangalore<br />
                       Karnataka 560092
                     </a>
-                    2nd Floor, Vinayaka Complex<br />
-                    11, Kodigehalli - Thindlu Main Road<br />
-                    near SVVK school, Sahakar Nagar<br />
-                    Kodigehalli, Bangalore<br />
-                    Karnataka, 560092
                   </p>
                   <a 
                     href="https://maps.google.com/?q=2nd+Floor,+Vinayaka+Complex,+11,+Kodigehalli,+Bangalore,+560092" 
@@ -118,8 +113,6 @@ export default function Contact() {
                   <p className="text-gray-600">
                     <a href="tel:+919741187003" className="underline hover:text-primaryBlue">+91-9741187003</a><br />
                     <a href="tel:+919740488001" className="underline hover:text-primaryBlue">+91-9740488001</a>
-                    <a href="tel:9741187003" className="hover:text-primaryBlue transition-colors">+91-9741187003</a><br />
-                    <a href="tel:9740488001" className="hover:text-primaryBlue transition-colors">+91-9740488001</a>
                   </p>
                 </div>
               </div>
@@ -204,6 +197,7 @@ export default function Contact() {
                   className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-primaryBlue transition-colors"
                 >
                   <option value="">Select your class</option>
+                  <option value="8">Class 8</option>
                   <option value="9">Class 9</option>
                   <option value="10">Class 10</option>
                   <option value="11">Class 11</option>
@@ -246,6 +240,7 @@ export default function Contact() {
                   <option value="Foundation">Foundation</option>
                   <option value="JEE">JEE</option>
                   <option value="NEET">NEET</option>
+                  <option value="KCET">KCET</option>
                 </select>
               </div>
 

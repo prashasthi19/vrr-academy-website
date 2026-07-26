@@ -11,7 +11,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
-                <span className="text-darkBlue font-bold">VR</span>
+                <span className="text-darkBlue font-bold">VRR</span>
               </div>
               <span className="font-bold text-lg">VRR Academy</span>
             </div>
@@ -38,7 +38,7 @@ export default function Footer() {
               <li>Foundation Courses</li>
               <li>JEE Preparation</li>
               <li>NEET Preparation</li>
-              <li>Online Classes</li>
+              <li>KCET Preparation</li>
             </ul>
           </div>
 
@@ -69,22 +69,6 @@ export default function Footer() {
           <p className="text-sm text-gray-400 mb-4 md:mb-0">
             © {currentYear} VRR Academy. All rights reserved.
           </p>
-
-          {/* Social Links */}
-          <div className="flex gap-4">
-            <a href="#" className="w-10 h-10 bg-white bg-opacity-10 rounded-full flex items-center justify-center hover:bg-opacity-20 transition-all">
-              <span>f</span>
-            </a>
-            <a href="#" className="w-10 h-10 bg-white bg-opacity-10 rounded-full flex items-center justify-center hover:bg-opacity-20 transition-all">
-              <span>𝕏</span>
-            </a>
-            <a href="#" className="w-10 h-10 bg-white bg-opacity-10 rounded-full flex items-center justify-center hover:bg-opacity-20 transition-all">
-              <span>in</span>
-            </a>
-            <a href="#" className="w-10 h-10 bg-white bg-opacity-10 rounded-full flex items-center justify-center hover:bg-opacity-20 transition-all">
-              <span>📷</span>
-            </a>
-          </div>
 
           {/* Legal Links */}
           <div className="flex gap-6 text-sm text-gray-400 mt-4 md:mt-0">

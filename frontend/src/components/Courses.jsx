@@ -48,7 +48,7 @@ export default function Courses() {
       eligibility: 'Class 11-12',
       description: 'Specialized coaching for Karnataka CET examination. Master the exam pattern with focused strategies and comprehensive test series.',
       features: [
-        'Expert guidance for Engineering and Medical streams',
+        'Expert guidance for Engineering streams',
         'KCET specific test series',
         'Topic-wise preparation material',
         'Time management strategies'

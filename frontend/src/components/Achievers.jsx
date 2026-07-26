@@ -19,14 +19,13 @@ export default function Achievers() {
               alt="VRR Academy achievers"
               className="w-full h-auto object-cover"
             />
-            Proven track record of success
           </div>
         </div>
 
         {/* Stats Section */}
         <div className="grid md:grid-cols-3 gap-8 p-8 bg-white rounded-xl shadow-lg">
           <div className="text-center hover:transform hover:scale-105 transition-all duration-300">
-            <p className="text-6xl font-bold bg-gradient-to-r from-primaryBlue to-darkBlue bg-clip-text text-transparent mb-2">5000+</p>
+            <p className="text-6xl font-bold bg-gradient-to-r from-primaryBlue to-darkBlue bg-clip-text text-transparent mb-2">500+</p>
             <p className="text-lg text-gray-600 font-semibold">Students Trained</p>
             <p className="text-sm text-gray-500 mt-2">Across all programs</p>
           </div>
@@ -34,11 +33,6 @@ export default function Achievers() {
             <p className="text-6xl font-bold bg-gradient-to-r from-primaryBlue to-darkBlue bg-clip-text text-transparent mb-2">98%</p>
             <p className="text-lg text-gray-600 font-semibold">Success Rate</p>
             <p className="text-sm text-gray-500 mt-2">Proven results</p>
-          </div>
-          <div className="text-center hover:transform hover:scale-105 transition-all duration-300">
-            <p className="text-6xl font-bold bg-gradient-to-r from-primaryBlue to-darkBlue bg-clip-text text-transparent mb-2">500+</p>
-            <p className="text-lg text-gray-600 font-semibold">Top Rankings</p>
-            <p className="text-sm text-gray-500 mt-2">In JEE & NEET</p>
           </div>
         </div>
 
