@@ -123,7 +123,7 @@ export default function Contact() {
                 <div>
                   <h3 className="font-bold text-lg text-darkText mb-2">Email</h3>
                   <p className="text-gray-600">
-                    vrr.career.acadmey@gmail.com
+                    <a href="mailto:vrr.career.academy@gmail.com" className="underline hover:text-primaryBlue">vrr.career.academy@gmail.com</a>
                   </p>
                 </div>
               </div>

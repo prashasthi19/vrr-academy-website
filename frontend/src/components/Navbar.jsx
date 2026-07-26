@@ -26,7 +26,7 @@ export default function Navbar() {
             onClick={closeMenu}
           >
             <div className="w-10 h-10 bg-primaryBlue rounded-lg flex items-center justify-center transform group-hover:scale-110 transition-transform">
-              <span className="text-white font-bold text-xl">VR</span>
+              <span className="text-white font-bold text-xl">VRR</span>
             </div>
             <span className="hidden sm:block font-bold text-lg text-darkBlue">VRR Academy</span>
           </Link>
@@ -46,9 +46,9 @@ export default function Navbar() {
 
           {/* CTA Button & Hamburger */}
           <div className="flex items-center gap-3">
-            <button className="hidden sm:block px-6 py-2 bg-primaryBlue text-white font-semibold rounded-lg hover:bg-darkBlue transform hover:scale-105 transition-all duration-200 shadow-md">
+            <a href="#contact" className="hidden sm:block px-6 py-2 bg-primaryBlue text-white font-semibold rounded-lg hover:bg-darkBlue transform hover:scale-105 transition-all duration-200 shadow-md">
               Enroll Now
-            </button>
+            </a>
 
             {/* Hamburger Menu */}
             <button
@@ -95,9 +95,9 @@ export default function Navbar() {
                 {link.label}
               </a>
             ))}
-            <button className="w-full mt-4 px-4 py-2 bg-primaryBlue text-white font-semibold rounded-lg hover:bg-darkBlue transition-colors">
+            <a href="#contact" className="block w-full mt-4 px-4 py-2 bg-primaryBlue text-white font-semibold rounded-lg hover:bg-darkBlue transition-colors text-center" onClick={closeMenu}>
               Enroll Now
-            </button>
+            </a>
           </div>
         )}
       </div>
