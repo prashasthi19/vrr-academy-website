@@ -12,27 +12,27 @@ export default function IntegratedProgram() {
             <p className="text-sm text-primaryBlue font-bold mt-1">ALL UNDER ONE ROOF</p>
 
             <div className="mt-4">
-              <div className="text-lg text-darkText font-bold">ADMISSIONS OPEN!</div>
-              <div className="text-sm font-normal text-gray-600">2026–27 BATCH</div>
+              <div className="text-4xl sm:text-5xl text-red-600 font-extrabold">ADMISSIONS OPEN!</div>
+              <div className="text-2xl sm:text-3xl font-bold text-gray-800 mt-2">2026–27 BATCH</div>
             </div>
 
-            <div className="mt-6">
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUstjuVrJGhVFjf3ry-E1bOmDsu9avbxLopfskJrhRTFRL6Q/viewform?usp=header" target="_blank" rel="noreferrer noopener" className="inline-block px-6 py-3 bg-primaryBlue text-white font-bold rounded-lg shadow-md hover:bg-darkBlue transition-colors" aria-label="Apply for admission via Google Form">
-                APPLY NOW
+            <div className="mt-8">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUstjuVrJGhVFjf3ry-E1bOmDsu9avbxLopfskJrhRTFRL6Q/viewform?usp=header" target="_blank" rel="noreferrer noopener" className="inline-block px-14 py-6 bg-red-600 text-white font-extrabold text-2xl sm:text-3xl rounded-2xl shadow-2xl hover:bg-red-700 hover:shadow-3xl transform hover:scale-110 transition-all duration-300" aria-label="Apply for admission via Google Form">
+                APPLY NOW →
               </a>
             </div>
           </div>
 
           {/* Streams - centered, no subjects listed per request */}
-          <div className="mt-10 grid md:grid-cols-3 gap-6">
-            <div className="p-6 rounded-xl bg-primaryBlue text-white shadow-md flex items-center justify-center">
-              <h4 className="text-xl font-bold">PCMB</h4>
+          <div className="mt-10 grid md:grid-cols-3 gap-4">
+            <div className="p-3 rounded bg-primaryBlue text-white shadow-md flex items-center justify-center">
+              <h4 className="text-base font-bold">PCMB</h4>
             </div>
-            <div className="p-6 rounded-xl bg-darkBlue text-white shadow-md flex items-center justify-center">
-              <h4 className="text-xl font-bold">PCMC</h4>
+            <div className="p-3 rounded bg-darkBlue text-white shadow-md flex items-center justify-center">
+              <h4 className="text-base font-bold">PCMC</h4>
             </div>
-            <div className="p-6 rounded-xl bg-gradient-to-r from-primaryBlue to-darkBlue text-white shadow-md flex items-center justify-center">
-              <h4 className="text-xl font-bold">PCME</h4>
+            <div className="p-3 rounded bg-gradient-to-r from-primaryBlue to-darkBlue text-white shadow-md flex items-center justify-center">
+              <h4 className="text-base font-bold">PCME</h4>
             </div>
           </div>
 
