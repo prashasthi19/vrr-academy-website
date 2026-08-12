@@ -5,7 +5,7 @@ export default function IntegratedProgram() {
         <div className="p-8 rounded-2xl shadow-xl bg-white">
           {/* Main content */}
           <div className="text-center">
-            <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gradient">VRR CAREER ACADEMY × SHANTI NIKETAN PU COLLEGE</h3>
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-gradient flex justify-center items-center gap-3">      VRR CAREER ACADEMY    <img src="/HS3.jpeg" alt="Handshake" className="h-10 sm:h-12 md:h-14 align-middle" />    SHANTI NIKETAN PU COLLEGE</h3>
             <h2 className="mt-2 text-base sm:text-lg font-medium text-gray-600">Academic Integration for PU + Competitive Exam Preparation</h2>
 
             <p className="mt-4 text-2xl font-bold text-primaryBlue">PU BOARDS + KCET + JEE + NEET</p>

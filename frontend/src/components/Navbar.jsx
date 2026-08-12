@@ -23,7 +23,7 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex flex-col items-center justify-center">
           <div className="text-center">
             <div className="text-lg sm:text-2xl md:text-3xl font-extrabold tracking-tight">
-                VRR Career Academy <span className="font-semibold text-base md:text-lg">in association with</span> <span className="font-black">Shanti Niketan PU College</span>
+                VRR Career Academy <span className="font-semibold text-base md:text-lg">in academic association with</span> <span className="font-black">Shanti Niketan PU College</span>
             </div>
             <div className="mt-1">
               <span className="inline-block px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm font-semibold">ADMISSIONS OPEN</span>
