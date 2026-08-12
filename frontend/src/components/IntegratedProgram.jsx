@@ -17,7 +17,7 @@ export default function IntegratedProgram() {
             </div>
 
             <div className="mt-6">
-              <a href="#contact" className="inline-block px-6 py-3 bg-primaryBlue text-white font-bold rounded-lg shadow-md hover:bg-darkBlue transition-colors" aria-label="Apply for admission">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUstjuVrJGhVFjf3ry-E1bOmDsu9avbxLopfskJrhRTFRL6Q/viewform?usp=header" target="_blank" rel="noreferrer noopener" className="inline-block px-6 py-3 bg-primaryBlue text-white font-bold rounded-lg shadow-md hover:bg-darkBlue transition-colors" aria-label="Apply for admission via Google Form">
                 APPLY NOW
               </a>
             </div>

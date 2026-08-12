@@ -44,7 +44,7 @@ export default function Hero() {
           <div className="hidden md:flex items-center justify-center">
             <div className="relative w-full h-96 overflow-hidden rounded-2xl border border-lightBlue border-opacity-30 shadow-2xl">
               <img
-                src="/VRR1.jpeg"
+                src="/VRR1.png"
                 alt="VRR Academy banner"
                 className="w-full h-full object-cover"
               />
