@@ -111,8 +111,7 @@ export default function Contact() {
                 <div>
                   <h3 className="font-bold text-lg text-darkText mb-2">Phone</h3>
                   <p className="text-gray-600">
-                    <a href="tel:+919741187003" className="underline hover:text-primaryBlue">+91-9741187003</a><br />
-                    <a href="tel:+919740488001" className="underline hover:text-primaryBlue">+91-9740488001</a>
+                    <a href="tel:+919611747003" className="underline hover:text-primaryBlue">+91-9611747003</a>
                   </p>
                 </div>
               </div>
