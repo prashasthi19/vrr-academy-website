@@ -9,6 +9,7 @@ export default function Navbar() {
 
   const navLinks = [
     { label: 'Home', href: '#home' },
+    { label: 'Integrated Program', href: '#integrated' },
     { label: 'Courses', href: '#courses' },
     { label: 'Why Us', href: '#why-us' },
     { label: 'Achievements', href: '#achievements' },
@@ -16,9 +17,24 @@ export default function Navbar() {
   ]
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-white shadow-lg z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+    <>
+      {/* Top association banner */}
+      <div className="fixed top-0 left-0 right-0 bg-gradient-to-r from-darkBlue to-primaryBlue text-white z-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex flex-col items-center justify-center">
+          <div className="text-center">
+            <div className="text-lg sm:text-2xl md:text-3xl font-extrabold tracking-tight">
+                VRR Career Academy <span className="font-semibold text-base md:text-lg">in association with</span> <span className="font-black">Shanti Niketan PU College</span>
+            </div>
+            <div className="mt-1">
+              <span className="inline-block px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm font-semibold">ADMISSIONS OPEN</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav className="fixed top-20 left-0 right-0 bg-white shadow-lg z-40">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link 
             to="/" 
@@ -101,6 +117,7 @@ export default function Navbar() {
           </div>
         )}
       </div>
-    </nav>
+      </nav>
+    </>
   )
 }

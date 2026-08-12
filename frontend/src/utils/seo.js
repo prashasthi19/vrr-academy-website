@@ -28,7 +28,7 @@ export const setSeoMeta = (title, description, image, url) => {
   updateMeta('description', description)
   updateMeta('viewport', 'width=device-width, initial-scale=1.0')
   updateMeta('theme-color', '#1D4ED8')
-  updateMeta('keywords', 'VRR Academy, JEE, NEET, Foundation, Coaching, Online Classes')
+  updateMeta('keywords', 'VRR Academy, Shanti Niketan PU College, PU Integrated Academy, JEE, NEET, KCET, Admissions 2026')
 
   // Open Graph tags
   updateOgMeta('og:title', title)

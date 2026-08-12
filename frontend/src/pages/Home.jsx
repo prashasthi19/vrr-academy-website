@@ -4,6 +4,7 @@ import { setSeoMeta, addOrganizationSchema } from '../utils/seo'
 const Hero = lazy(() => import('../components/Hero'))
 const Achievers = lazy(() => import('../components/Achievers'))
 const Courses = lazy(() => import('../components/Courses'))
+const IntegratedProgram = lazy(() => import('../components/IntegratedProgram'))
 const WhyChooseUs = lazy(() => import('../components/WhyChooseUs'))
 const Features = lazy(() => import('../components/Features'))
 const Testimonials = lazy(() => import('../components/Testimonials'))
@@ -25,8 +26,8 @@ export default function Home() {
   useEffect(() => {
     // Set SEO meta tags for home page
     setSeoMeta(
-      'VRR Academy - Excellence in JEE, NEET & Foundation Coaching',
-      'Transform your dreams into reality with VRR Academy. Expert faculty, proven methodology, and personalized mentoring for JEE, NEET, and Foundation courses. 98% success rate.',
+      'VRR Academy × Shanti Niketan — Integrated PU + Competitive Exam Program',
+      'VRR Career Academy is now academically integrated with Shanti Niketan PU College. Integrated PU board academics with KCET, JEE and NEET preparation. Admissions open for 2026–27.',
       'https://vrr-academy.com/og-image.jpg',
       'https://vrr-academy.com'
     )
@@ -42,6 +43,10 @@ export default function Home() {
     <div className="w-full">
       <Suspense fallback={<SectionLoader />}>
         <Hero />
+      </Suspense>
+
+      <Suspense fallback={<SectionLoader />}>
+        <IntegratedProgram />
       </Suspense>
 
       <Suspense fallback={<SectionLoader />}>

@@ -1,13 +1,15 @@
 export default function Hero() {
   return (
-    <section id="home" className="pt-20 pb-16 bg-gradient-to-br from-primaryBlue via-darkBlue to-primaryBlue min-h-screen flex items-center">
+    <section id="home" className="pt-36 pb-16 bg-gradient-to-br from-primaryBlue via-darkBlue to-primaryBlue min-h-screen flex items-center">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="text-white space-y-6 animate-fade-in">
-            <div className="inline-block px-4 py-2 bg-lightBlue bg-opacity-20 rounded-full border border-lightBlue">
-              <span className="text-lightBlue font-semibold text-sm">🌟 Welcome to Excellence</span>
-            </div>
+              <div className="inline-block px-3 py-1 bg-lightBlue bg-opacity-20 rounded-full border border-lightBlue/60 shadow-sm">
+                <span className="text-lightBlue font-semibold text-sm">🌟 Welcome to Excellence</span>
+              </div>
+
+              {/* Integration badge removed - association banner added above navbar */}
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-white">
               Your Path to Academic Success
