@@ -1,59 +1,42 @@
+const streams = [
+  { name: 'PCMB', description: 'Physics • Chemistry • Mathematics • Biology', focus: 'PU Boards + KCET + NEET' },
+  { name: 'PCMC', description: 'Physics • Chemistry • Mathematics • Computer Science', focus: 'PU Boards + KCET + JEE' },
+  { name: 'PCME', description: 'Physics • Chemistry • Mathematics • Electronics', focus: 'PU Boards + KCET + JEE' }
+]
+
 export default function IntegratedProgram() {
   return (
-    <section id="integrated" className="py-16 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="p-8 rounded-2xl shadow-xl bg-white">
-          {/* Main content */}
-          <div className="text-center">
-            <h3 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-gradient flex justify-center items-center gap-3">      VRR CAREER ACADEMY    <img src="/HS3.jpeg" alt="Handshake" className="h-10 sm:h-12 md:h-14 align-middle" />    SHANTI NIKETAN PU COLLEGE</h3>
-            <h2 className="mt-2 text-base sm:text-lg font-medium text-gray-600">Academic Integration for PU + Competitive Exam Preparation</h2>
+    <section id="integrated" className="bg-white py-16">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="text-center">
+          <p className="text-sm font-bold uppercase tracking-[0.22em] text-primaryBlue">Integrated Academic Program</p>
+          <h2 className="mt-4 text-3xl font-black text-darkText sm:text-4xl">A strong academic bridge for PU and competitive success</h2>
+        </div>
 
-            <p className="mt-4 text-2xl font-bold text-primaryBlue">PU BOARDS + KCET + JEE + NEET</p>
-            <p className="text-sm text-primaryBlue font-bold mt-1">ALL UNDER ONE ROOF</p>
-
-            <div className="mt-4">
-              <div className="text-4xl sm:text-5xl text-red-600 font-extrabold">ADMISSIONS OPEN!</div>
-              <div className="text-2xl sm:text-3xl font-bold text-gray-800 mt-2">2026–27 BATCH</div>
+        <div className="mt-10 rounded-[2rem] border border-slate-200 bg-slate-50 p-6 shadow-sm sm:p-8 lg:p-10">
+          <div className="flex flex-col items-center justify-center gap-3 text-center">
+            <div className="flex flex-col items-center gap-2 sm:flex-row sm:gap-4">
+              <span className="text-2xl font-black text-darkText sm:text-3xl">VRR Career Academy</span>
+              <img src="/HS3.jpeg" alt="partnership" className="h-8 sm:h-10" />
+              <span className="text-2xl font-black text-primaryBlue sm:text-3xl">Shanti Niketan PU College</span>
             </div>
-
-            <div className="mt-8">
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUstjuVrJGhVFjf3ry-E1bOmDsu9avbxLopfskJrhRTFRL6Q/viewform?usp=header" target="_blank" rel="noreferrer noopener" className="inline-block px-14 py-6 bg-red-600 text-white font-extrabold text-2xl sm:text-3xl rounded-2xl shadow-2xl hover:bg-red-700 hover:shadow-3xl transform hover:scale-110 transition-all duration-300" aria-label="Apply for admission via Google Form">
-                APPLY NOW →
-              </a>
+            <div className="mt-4 h-px w-full max-w-3xl bg-gradient-to-r from-transparent via-slate-300 to-transparent" />
+            <div className="mt-6">
+              <p className="text-base font-bold uppercase tracking-[0.2em] text-slate-500">PU Integrated Academy</p>
+              <p className="mt-3 text-2xl font-black text-darkText sm:text-3xl">PU BOARDS + KCET + JEE + NEET</p>
+              <p className="mt-3 text-lg font-semibold text-primaryBlue">ALL UNDER ONE ROOF</p>
             </div>
           </div>
 
-          {/* Streams - centered, no subjects listed per request */}
-          <div className="mt-10 grid md:grid-cols-3 gap-4">
-            <div className="p-3 rounded bg-primaryBlue text-white shadow-md flex items-center justify-center">
-              <h4 className="text-base font-bold">PCMB</h4>
-            </div>
-            <div className="p-3 rounded bg-darkBlue text-white shadow-md flex items-center justify-center">
-              <h4 className="text-base font-bold">PCMC</h4>
-            </div>
-            <div className="p-3 rounded bg-gradient-to-r from-primaryBlue to-darkBlue text-white shadow-md flex items-center justify-center">
-              <h4 className="text-base font-bold">PCME</h4>
-            </div>
-          </div>
-
-          {/* Integrated advantages - placed below streams, colorful cards */}
-          <div className="mt-10 grid sm:grid-cols-2 gap-6">
-            <div className="p-6 rounded-lg bg-blue-50">
-              <h5 className="font-semibold text-darkText">📚 Board Academics + Exam Prep</h5>
-              <p className="text-sm text-gray-600 mt-2">PU Board curriculum delivered alongside focused JEE/NEET/KCET coaching.</p>
-            </div>
-            <div className="p-6 rounded-lg bg-yellow-50">
-              <h5 className="font-semibold text-darkText">🧪 Regular Tests & Revision</h5>
-              <p className="text-sm text-gray-600 mt-2">Structured assessments, revision cycles and performance tracking.</p>
-            </div>
-            <div className="p-6 rounded-lg bg-rose-50">
-              <h5 className="font-semibold text-darkText">📘 Study Material</h5>
-              <p className="text-sm text-gray-600 mt-2">Comprehensive study materials aligned to both board and competitive exams.</p>
-            </div>
-            <div className="p-6 rounded-lg bg-green-50">
-              <h5 className="font-semibold text-darkText">🤝 Personal Mentoring</h5>
-              <p className="text-sm text-gray-600 mt-2">Academic monitoring and mentoring to guide career pathways.</p>
-            </div>
+          <div className="mt-10 grid gap-5 md:grid-cols-3">
+            {streams.map((stream) => (
+              <div key={stream.name} className="rounded-2xl border border-slate-200 bg-white p-6 text-center shadow-sm transition-shadow duration-200 hover:shadow-lg">
+                <h3 className="text-2xl font-black text-darkText">{stream.name}</h3>
+                <p className="mt-3 text-sm leading-relaxed text-slate-600">{stream.description}</p>
+                <p className="mt-4 text-xs font-bold uppercase tracking-[0.18em] text-slate-500">Focus</p>
+                <p className="mt-2 text-sm font-semibold text-primaryBlue">{stream.focus}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>

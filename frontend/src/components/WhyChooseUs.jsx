@@ -1,71 +1,64 @@
 export default function WhyChooseUs() {
   const reasons = [
     {
+      icon: '🎓',
+      title: 'PU + Coaching under one academic system',
+      description: 'Students learn board academics and competitive preparation within a single structured framework.'
+    },
+    {
       icon: '👨‍🏫',
-      title: 'Expert Faculty',
-      description: 'Experienced teachers with proven track record of producing top rankers'
+      title: 'Expert subject faculty',
+      description: 'Academic guidance designed around concepts, application and exam-oriented thinking.'
+    },
+    {
+      icon: '📘',
+      title: 'Chapter-wise study material',
+      description: 'Well-structured resources aligned with PU Board and competitive exam needs.'
     },
     {
       icon: '📝',
-      title: 'Weekly Tests',
-      description: 'Regular assessments to track progress and identify weak areas'
+      title: 'Regular tests and OMR practice',
+      description: 'Frequent assessments and practice routines help students improve accuracy and confidence.'
     },
     {
       icon: '🎯',
-      title: 'Personal Mentoring',
-      description: 'One-on-one doubt sessions and personalized study guidance'
+      title: 'Board + competitive exam strategy',
+      description: 'Preparation designed to balance academic performance with KCET, JEE and NEET readiness.'
     },
     {
       icon: '📊',
-      title: 'Proven Results',
-      description: '98% success rate with consistent AIR rankings'
+      title: 'Academic monitoring',
+      description: 'Progress is tracked through structured performance review and guided improvement plans.'
     },
     {
-      icon: '🏆',
-      title: 'Success Track Record',
-      description: '5000+ successful students placed in top colleges'
+      icon: '💬',
+      title: 'Parent progress updates',
+      description: 'A parent-friendly model that supports ongoing transparency and academic accountability.'
+    },
+    {
+      icon: '🤝',
+      title: 'Personal mentoring',
+      description: 'Students receive individual guidance to stay focused, disciplined and academically balanced.'
     }
   ]
 
   return (
-    <section id="why-us" className="py-16 bg-gray">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-darkText mb-4">
-            ✨ Why Choose VRR Academy?
-          </h2>
-          <p className="text-xl text-gray-600">
-            What sets us apart from other coaching institutes
-          </p>
+    <section id="about" className="bg-white py-16">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mb-12 text-center">
+          <p className="text-sm font-bold uppercase tracking-[0.2em] text-primaryBlue">Why VRR Career Academy</p>
+          <h2 className="mt-4 text-3xl font-black text-darkText sm:text-4xl">One integrated academic ecosystem for future-ready learning</h2>
         </div>
 
-        {/* Feature Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-4">
           {reasons.map((reason, index) => (
-            <div
-              key={index}
-              className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
-            >
-              {/* Icon */}
-              <div className="text-5xl mb-4">{reason.icon}</div>
-
-              {/* Title */}
-              <h3 className="text-xl font-bold text-darkText mb-3">
-                {reason.title}
-              </h3>
-
-              {/* Description */}
-              <p className="text-gray-600 leading-relaxed">
-                {reason.description}
-              </p>
-
-              {/* Bottom accent */}
-              <div className="w-12 h-1 bg-gradient-to-r from-primaryBlue to-darkBlue mt-4 rounded-full"></div>
+            <div key={index} className="rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm transition-shadow duration-200 hover:shadow-lg">
+              <div className="mb-4 text-4xl">{reason.icon}</div>
+              <h3 className="text-xl font-bold text-darkText">{reason.title}</h3>
+              <p className="mt-3 text-sm leading-relaxed text-slate-600">{reason.description}</p>
             </div>
           ))}
         </div>
-
       </div>
     </section>
   )

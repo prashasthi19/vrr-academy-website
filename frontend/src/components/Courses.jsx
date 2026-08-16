@@ -1,115 +1,60 @@
-export default function Courses() {
-  const courses = [
-    {
-      id: 1,
-      title: 'Foundation Courses',
-      eligibility: 'Class 8-10',
-      description: 'Build strong fundamentals in Math, Physics, Chemistry and Biology for Class 8, 9, and 10 students. Ideal for early exam preparation and academic excellence.',
-      features: [
-        'Class 8 to 10 aligned curriculum',
-        'Conceptual clarity with practice',
-        'Weekly tests and performance tracking',
-        'Personalized mentoring and doubt support'
-      ],
-      icon: '📚',
-      color: 'from-blue-400 to-blue-600'
-    },
-    {
-      id: 2,
-      title: 'JEE Preparation',
-      eligibility: 'Class 11-12',
-      description: 'Comprehensive coaching for JEE Main and Advanced. Our proven methodology helps students achieve top ranks in the examination.',
-      features: [
-        'Expert faculty',
-        'Daily doubt sessions',
-        'Mock tests',
-        'Study materials'
-      ],
-      icon: '⚛️',
-      color: 'from-purple-400 to-purple-600'
-    },
-    {
-      id: 3,
-      title: 'NEET Preparation',
-      eligibility: 'Class 11-12',
-      description: 'Specialized coaching for medical aspirants. We focus on high accuracy and quick problem-solving for NEET examination.',
-      features: [
-        'Biology expertise',
-        'Previous year papers',
-        'Test series',
-        'Career guidance'
-      ],
-      icon: '🔬',
-      color: 'from-green-400 to-green-600'
-    },
-    {
-      id: 4,
-      title: 'KCET Preparation',
-      eligibility: 'Class 11-12',
-      description: 'Specialized coaching for Karnataka CET examination. Master the exam pattern with focused strategies and comprehensive test series.',
-      features: [
-        'Expert guidance for Engineering streams',
-        'KCET specific test series',
-        'Topic-wise preparation material',
-        'Time management strategies'
-      ],
-      icon: '🎯',
-      color: 'from-orange-400 to-orange-600'
-    }
-  ]
+const programs = [
+  {
+    name: 'PCMB',
+    subjects: 'Physics • Chemistry • Mathematics • Biology',
+    focus: 'PU Boards + KCET + JEE + NEET',
+    description: 'A complete science pathway for students aiming for strong board performance along with competitive exam readiness.',
+    accent: 'from-blue-600 to-blue-500'
+  },
+  {
+    name: 'PCMC',
+    subjects: 'Physics • Chemistry • Mathematics • Computer Science',
+    focus: 'PU Boards + KCET + JEE',
+    description: 'Built for students who are oriented toward mathematics, technology and engineering-focused academic planning.',
+    accent: 'from-indigo-600 to-indigo-500'
+  },
+  {
+    name: 'PCME',
+    subjects: 'Physics • Chemistry • Mathematics • Electronics',
+    focus: 'PU Boards + KCET + JEE',
+    description: 'A focused stream for students interested in high-value technical pathways and structured academic preparation.',
+    accent: 'from-sky-600 to-cyan-500'
+  }
+]
 
+export default function Courses() {
   return (
-    <section id="courses" className="py-16 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-darkText mb-4">
-            📖 Courses We Offer
-          </h2>
-          <p className="text-xl text-gray-600">
-            Choose the right program for your goals
-          </p>
+    <section id="courses" className="bg-slate-50 py-16">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mb-12 text-center">
+          <p className="text-sm font-bold uppercase tracking-[0.2em] text-primaryBlue">Programs</p>
+          <h2 className="mt-4 text-3xl font-black text-darkText sm:text-4xl">Choose the right stream for your future</h2>
         </div>
 
-        {/* Courses Grid */}
-        <div className="grid md:grid-cols-3 gap-8">
-          {courses.map((course) => (
+        <div className="grid gap-8 md:grid-cols-3">
+          {programs.map((program) => (
             <div
-              key={course.id}
-              className="bg-white border-2 border-gray rounded-xl overflow-hidden hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 group"
+              key={program.name}
+              className="group overflow-hidden rounded-[1.75rem] border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
             >
-              {/* Header with Icon */}
-              <div className={`bg-gradient-to-r ${course.color} p-8 text-center`}>
-                <div className="text-6xl mb-2">{course.icon}</div>
+              <div className={`bg-gradient-to-r ${program.accent} p-7 text-white`}>
+                <div className="text-sm font-bold uppercase tracking-[0.18em] text-blue-100">Stream</div>
+                <h3 className="mt-3 text-3xl font-black">{program.name}</h3>
               </div>
 
-              {/* Content */}
               <div className="p-6">
-                {/* Title */}
-                <h3 className="text-2xl font-bold text-darkText mb-2">
-                  {course.title}
-                </h3>
-
-                {/* Eligibility Badge */}
-                <div className="inline-block px-3 py-1 bg-lightBlue text-primaryBlue rounded-full text-sm font-semibold mb-4">
-                  {course.eligibility}
+                <p className="text-base font-semibold text-slate-700">{program.subjects}</p>
+                <div className="mt-5 rounded-xl bg-blue-50 p-3">
+                  <p className="text-xs font-bold uppercase tracking-[0.18em] text-primaryBlue">Focus</p>
+                  <p className="mt-2 text-sm font-semibold text-darkText">{program.focus}</p>
                 </div>
-
-                {/* Description */}
-                <p className="text-gray-600 mb-6 leading-relaxed">
-                  {course.description}
-                </p>
-
-                {/* Features */}
-                <div className="space-y-3 mb-6">
-                  {course.features.map((feature, idx) => (
-                    <div key={idx} className="flex items-center gap-3">
-                      <span className="w-2 h-2 bg-primaryBlue rounded-full"></span>
-                      <span className="text-gray-700">{feature}</span>
-                    </div>
-                  ))}
-                </div>
-
+                <p className="mt-5 text-sm leading-relaxed text-slate-600">{program.description}</p>
+                <a
+                  href="#contact"
+                  className="mt-6 inline-flex items-center rounded-full bg-primaryBlue px-5 py-2.5 text-sm font-bold text-white transition-colors duration-200 hover:bg-darkBlue"
+                >
+                  Enquire Now
+                </a>
               </div>
             </div>
           ))}

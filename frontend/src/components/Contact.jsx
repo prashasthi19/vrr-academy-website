@@ -1,6 +1,10 @@
 import { useState } from 'react'
 import { submitEnquiry } from '../services/api'
 
+const admissionFormUrl =
+  import.meta.env.VITE_ADMISSION_FORM_URL ||
+  'https://docs.google.com/forms/d/e/1FAIpQLSdUstjuVrJGhVFjf3ry-E1bOmDsu9avbxLopfskJrhRTFRL6Q/viewform?usp=header'
+
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: '',
@@ -17,7 +21,7 @@ export default function Contact() {
 
   const handleChange = (e) => {
     const { name, value } = e.target
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
       [name]: value
     }))
@@ -51,126 +55,92 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="py-16 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-12">
-          {/* Left - Contact Info */}
+    <section id="contact" className="bg-white py-16">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="grid gap-12 md:grid-cols-2">
           <div>
-            <h2 className="text-4xl font-bold text-darkText mb-8">
-              📞 Get In Touch
-            </h2>
+            <p className="text-sm font-bold uppercase tracking-[0.2em] text-primaryBlue">Contact</p>
+            <h2 className="mt-4 text-3xl font-black text-darkText sm:text-4xl">Talk to our admissions team</h2>
 
-            <div className="space-y-8">
-              {/* Address */}
+            <div className="mt-8 space-y-8">
               <div className="flex gap-4">
                 <div className="text-3xl">📍</div>
                 <div>
-                  <h3 className="font-bold text-lg text-darkText mb-2">Address</h3>
-                  <p className="text-gray-600">
+                  <h3 className="mb-2 text-lg font-bold text-darkText">Address</h3>
+                  <p className="text-slate-600">
                     <a
-                      href="https://www.google.com/maps/search/?api=1&query=%2312,+1st+A+Cross,+Dhanalakshmi+Layout,+Virupakshapura,+Bengaluru,+Karnataka+560097"
+                      href="https://maps.google.com/?q=52nd+Floor,+Vinayaka+Complex,+11,+Kodigehalli+-+Thindlu+Main+Road,+Near+SVVK+School,+Sahakar+Nagar,+Kodigehalli,+Bangalore,+Karnataka+560092"
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                       className="underline hover:text-primaryBlue"
                     >
-                      VRR Academy<br />
-                      #12, 1st A Cross, Dhanalakshmi Layout<br />
-                      Virupakshapura, Bengaluru<br />
-                      Karnataka 560097
-                    </a>
-                  </p>
-                  <p className="text-gray-600 mt-4">
-                    <a
-                      href="https://www.google.com/maps/search/?api=1&query=2nd+Floor,+Vinayaka+Complex,+11+Kodigehalli+-+Thindlu+Main+Road,+near+SVVK+school,+Sahakar+Nagar,+Kodigehalli,+Bangalore,+Karnataka+560092"
-                      target="_blank"
-                      rel="noreferrer"
-                      className="underline hover:text-primaryBlue"
-                    >
-                      VRR Academy - Sahakar Nagar<br />
-                      2nd Floor, Vinayaka Complex<br />
+                      52nd Floor, Vinayaka Complex<br />
                       11, Kodigehalli - Thindlu Main Road<br />
-                      near SVVK school, Sahakar Nagar<br />
+                      Near SVVK School, Sahakar Nagar<br />
                       Kodigehalli, Bangalore<br />
                       Karnataka 560092
                     </a>
                   </p>
-                  <a 
-                    href="https://maps.google.com/?q=2nd+Floor,+Vinayaka+Complex,+11,+Kodigehalli,+Bangalore,+560092" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="inline-block mt-3 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors text-sm font-semibold"
-                  >
-                    📍 View on Google Maps
-                  </a>
                 </div>
               </div>
 
-              {/* Phone */}
               <div className="flex gap-4">
                 <div className="text-3xl">☎️</div>
                 <div>
-                  <h3 className="font-bold text-lg text-darkText mb-2">Phone</h3>
-                  <p className="text-gray-600">
-                    <a href="tel:+919611747003" className="underline hover:text-primaryBlue">+91-9611747003</a>
+                  <h3 className="mb-2 text-lg font-bold text-darkText">Call Now</h3>
+                  <p className="text-slate-600">
+                    <a href="tel:+919611747003" className="underline hover:text-primaryBlue">9611747003</a><br />
+                    <a href="tel:+919741187003" className="underline hover:text-primaryBlue">9741187003</a>
                   </p>
                 </div>
               </div>
 
-              {/* Email */}
               <div className="flex gap-4">
                 <div className="text-3xl">📧</div>
                 <div>
-                  <h3 className="font-bold text-lg text-darkText mb-2">Email</h3>
-                  <p className="text-gray-600">
+                  <h3 className="mb-2 text-lg font-bold text-darkText">Email</h3>
+                  <p className="text-slate-600">
                     <a href="mailto:vrr.career.academy@gmail.com" className="underline hover:text-primaryBlue">vrr.career.academy@gmail.com</a>
                   </p>
                 </div>
               </div>
 
-              {/* WhatsApp */}
               <div className="flex gap-4">
                 <div className="text-3xl">💬</div>
                 <div>
-                  <h3 className="font-bold text-lg text-darkText mb-2">WhatsApp</h3>
+                  <h3 className="mb-2 text-lg font-bold text-darkText">WhatsApp</h3>
                   <a
-                    href="tel:+919740488001"
-                    className="inline-block px-6 py-3 bg-green-500 text-white font-bold rounded-lg hover:bg-green-600 transition-colors"
+                    href="https://wa.me/919611747003"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center rounded-full bg-green-500 px-6 py-3 text-sm font-bold text-white shadow-md transition-colors hover:bg-green-600"
                   >
-                    Chat with us
+                    WhatsApp
                   </a>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Right - Contact Form */}
-          <div className="bg-gray p-8 rounded-xl">
-            <h3 className="text-2xl font-bold text-darkText mb-6">
-              Enroll Now
-            </h3>
+          <div className="rounded-[1.5rem] bg-slate-50 p-6 sm:p-8">
+            <h3 className="mb-6 text-2xl font-bold text-darkText">Enquire Now</h3>
 
             <form onSubmit={handleSubmit} className="space-y-4">
-              {/* Name */}
               <div>
-                <label className="block text-sm font-semibold text-darkText mb-2">
-                  Full Name *
-                </label>
+                <label className="mb-2 block text-sm font-semibold text-darkText">Full Name *</label>
                 <input
                   type="text"
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-primaryBlue transition-colors"
+                  className="w-full rounded-lg border-2 border-slate-300 px-4 py-3 focus:border-primaryBlue focus:outline-none"
                   placeholder="Your name"
                 />
               </div>
 
-              {/* Phone */}
               <div>
-                <label className="block text-sm font-semibold text-darkText mb-2">
-                  Phone Number *
-                </label>
+                <label className="mb-2 block text-sm font-semibold text-darkText">Phone Number *</label>
                 <input
                   type="tel"
                   name="phone"
@@ -178,43 +148,35 @@ export default function Contact() {
                   onChange={handleChange}
                   required
                   pattern="[0-9]{10}"
-                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-primaryBlue transition-colors"
+                  className="w-full rounded-lg border-2 border-slate-300 px-4 py-3 focus:border-primaryBlue focus:outline-none"
                   placeholder="10-digit phone number"
                 />
               </div>
 
-              {/* Class */}
               <div>
-                <label className="block text-sm font-semibold text-darkText mb-2">
-                  Current Class *
-                </label>
+                <label className="mb-2 block text-sm font-semibold text-darkText">Current Class *</label>
                 <select
                   name="class"
                   value={formData.class}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-primaryBlue transition-colors"
+                  className="w-full rounded-lg border-2 border-slate-300 px-4 py-3 focus:border-primaryBlue focus:outline-none"
                 >
                   <option value="">Select your class</option>
-                  <option value="8">Class 8</option>
-                  <option value="9">Class 9</option>
                   <option value="10">Class 10</option>
                   <option value="11">Class 11</option>
                   <option value="12">Class 12</option>
                 </select>
               </div>
 
-              {/* Board */}
               <div>
-                <label className="block text-sm font-semibold text-darkText mb-2">
-                  Board *
-                </label>
+                <label className="mb-2 block text-sm font-semibold text-darkText">Board *</label>
                 <select
                   name="board"
                   value={formData.board}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-primaryBlue transition-colors"
+                  className="w-full rounded-lg border-2 border-slate-300 px-4 py-3 focus:border-primaryBlue focus:outline-none"
                 >
                   <option value="">Select your board</option>
                   <option value="State">State</option>
@@ -223,67 +185,55 @@ export default function Contact() {
                 </select>
               </div>
 
-              {/* Course */}
               <div>
-                <label className="block text-sm font-semibold text-darkText mb-2">
-                  Interested Course *
-                </label>
+                <label className="mb-2 block text-sm font-semibold text-darkText">Interested Program *</label>
                 <select
                   name="course"
                   value={formData.course}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-primaryBlue transition-colors"
+                  className="w-full rounded-lg border-2 border-slate-300 px-4 py-3 focus:border-primaryBlue focus:outline-none"
                 >
-                  <option value="">Select a course</option>
-                  <option value="Foundation">Foundation</option>
-                  <option value="JEE">JEE</option>
-                  <option value="NEET">NEET</option>
-                  <option value="KCET">KCET</option>
+                  <option value="">Select a program</option>
+                  <option value="PCMB">PCMB</option>
+                  <option value="PCMC">PCMC</option>
+                  <option value="PCME">PCME</option>
+                  <option value="PU Integrated Program">PU Integrated Program</option>
                 </select>
               </div>
 
-              {/* Message */}
               <div>
-                <label className="block text-sm font-semibold text-darkText mb-2">
-                  Message (Optional)
-                </label>
+                <label className="mb-2 block text-sm font-semibold text-darkText">Message (Optional)</label>
                 <textarea
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
                   rows="4"
-                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-primaryBlue transition-colors resize-none"
+                  className="w-full resize-none rounded-lg border-2 border-slate-300 px-4 py-3 focus:border-primaryBlue focus:outline-none"
                   placeholder="Tell us about yourself"
                 ></textarea>
               </div>
 
-              {/* Success Message */}
-              {success && (
-                <div className="p-4 bg-green-100 border-2 border-green-500 text-green-700 rounded-lg">
-                  ✅ Enrollment submitted successfully! We'll contact you soon.
-                </div>
-              )}
+              {error && <p className="text-sm font-medium text-red-600">{error}</p>}
+              {success && <p className="text-sm font-medium text-green-600">✅ Enrollment submitted successfully! We'll contact you soon.</p>}
 
-              {/* Error Message */}
-              {error && (
-                <div className="p-4 bg-red-100 border-2 border-red-500 text-red-700 rounded-lg">
-                  ❌ {error}
-                </div>
-              )}
-
-              {/* Submit Button */}
-              <button
-                type="button"
-                disabled={loading}
-                onClick={(e) => {
-                  e.preventDefault()
-                  window.location.href = 'tel:+919741187003'
-                }}
-                className="w-full py-3 bg-primaryBlue text-white font-bold rounded-lg hover:bg-darkBlue transform hover:scale-105 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
-              >
-                Submit Enrollment
-              </button>
+              <div className="flex flex-col gap-3 sm:flex-row">
+                <button
+                  type="submit"
+                  disabled={loading}
+                  className="inline-flex items-center justify-center rounded-full bg-primaryBlue px-6 py-3 text-sm font-bold text-white transition-colors hover:bg-darkBlue disabled:cursor-not-allowed disabled:opacity-50"
+                >
+                  {loading ? 'Submitting...' : 'ENQUIRE NOW'}
+                </button>
+                <a
+                  href={admissionFormUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center rounded-full border border-primaryBlue px-6 py-3 text-sm font-bold text-primaryBlue transition-colors hover:bg-primaryBlue hover:text-white"
+                >
+                  APPLY NOW
+                </a>
+              </div>
             </form>
           </div>
         </div>

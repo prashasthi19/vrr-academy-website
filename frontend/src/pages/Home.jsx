@@ -7,15 +7,17 @@ const Courses = lazy(() => import('../components/Courses'))
 const IntegratedProgram = lazy(() => import('../components/IntegratedProgram'))
 const WhyChooseUs = lazy(() => import('../components/WhyChooseUs'))
 const Features = lazy(() => import('../components/Features'))
+const AcademicLeadership = lazy(() => import('../components/AcademicLeadership'))
 const Testimonials = lazy(() => import('../components/Testimonials'))
 const Contact = lazy(() => import('../components/Contact'))
+const AdmissionsProcess = lazy(() => import('../components/AdmissionsProcess'))
+const AdmissionsCTA = lazy(() => import('../components/AdmissionsCTA'))
 
-// Loading component
 const SectionLoader = () => (
-  <div className="min-h-screen flex items-center justify-center bg-gray">
+  <div className="flex min-h-screen items-center justify-center bg-gray">
     <div className="text-center">
       <div className="inline-block">
-        <div className="w-12 h-12 border-4 border-primaryBlue border-t-transparent rounded-full animate-spin"></div>
+        <div className="h-12 w-12 animate-spin rounded-full border-4 border-primaryBlue border-t-transparent" />
       </div>
       <p className="mt-4 text-gray-600">Loading section...</p>
     </div>
@@ -24,18 +26,14 @@ const SectionLoader = () => (
 
 export default function Home() {
   useEffect(() => {
-    // Set SEO meta tags for home page
     setSeoMeta(
-      'VRR Academy × Shanti Niketan — Integrated PU + Competitive Exam Program',
-      'VRR Career Academy is now academically integrated with Shanti Niketan PU College. Integrated PU board academics with KCET, JEE and NEET preparation. Admissions open for 2026–27.',
+      'VRR Career Academy | PU Integrated Academy for KCET, JEE & NEET in Bengaluru',
+      'VRR Career Academy offers PU integrated coaching for PCMB, PCMC and PCME with PU Boards, KCET, JEE and NEET preparation in Bengaluru. Admissions open.',
       'https://vrr-academy.com/og-image.jpg',
       'https://vrr-academy.com'
     )
 
-    // Add structured data
     addOrganizationSchema()
-
-    // Scroll to top on page load
     window.scrollTo(0, 0)
   }, [])
 
@@ -50,7 +48,7 @@ export default function Home() {
       </Suspense>
 
       <Suspense fallback={<SectionLoader />}>
-        <Achievers />
+        <WhyChooseUs />
       </Suspense>
 
       <Suspense fallback={<SectionLoader />}>
@@ -58,11 +56,19 @@ export default function Home() {
       </Suspense>
 
       <Suspense fallback={<SectionLoader />}>
-        <WhyChooseUs />
+        <Features />
       </Suspense>
 
       <Suspense fallback={<SectionLoader />}>
-        <Features />
+        <AcademicLeadership />
+      </Suspense>
+
+      <Suspense fallback={<SectionLoader />}>
+        <AdmissionsProcess />
+      </Suspense>
+
+      <Suspense fallback={<SectionLoader />}>
+        <Achievers />
       </Suspense>
 
       <Suspense fallback={<SectionLoader />}>
@@ -71,6 +77,10 @@ export default function Home() {
 
       <Suspense fallback={<SectionLoader />}>
         <Contact />
+      </Suspense>
+
+      <Suspense fallback={<SectionLoader />}>
+        <AdmissionsCTA />
       </Suspense>
     </div>
   )
