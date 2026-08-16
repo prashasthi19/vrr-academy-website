@@ -27,7 +27,7 @@ As the Founder of VRR Career Academy, my commitment is to provide quality educat
     id: 'principal',
     role: 'Principal',
     name: 'Dr. P. Nageswara Rao',
-    title: 'Principal',
+    title: 'Principal, Shanti Niketan PU College',
     qualifications: 'M.Sc., M.Ed., KSET, Ph.D. in Mathematics',
     image: '/Principal.png',
     excerpt: 'At VRR Career Academy, our academic approach is built around strong fundamentals, regular assessments, exam-oriented preparation, and continuous improvement.',

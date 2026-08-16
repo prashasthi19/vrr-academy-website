@@ -40,7 +40,7 @@ export default function Navbar() {
           <div className="flex h-16 items-center justify-between">
             <Link to="/" className="flex items-center gap-3 group" onClick={closeMenu}>
               <img
-                src="/VRR1.png"
+                src="/VRR1.jpeg"
                 alt="VRR Career Academy Logo"
                 className="h-12 transition-transform duration-200 group-hover:scale-105"
               />
