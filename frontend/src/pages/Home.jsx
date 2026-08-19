@@ -33,7 +33,23 @@ export default function Home() {
     )
 
     addOrganizationSchema()
-    window.scrollTo(0, 0)
+
+    if (window.location.hash) {
+      const hash = window.location.hash.substring(1)
+
+      setTimeout(() => {
+        const element = document.getElementById(hash)
+
+        if (element) {
+          element.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+          })
+        }
+      }, 100)
+    } else {
+      window.scrollTo(0, 0)
+    }
   }, [])
 
   return (
