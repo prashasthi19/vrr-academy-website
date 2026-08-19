@@ -125,7 +125,7 @@ export default function VRRCourses() {
           </p>
 
           <a
-            href="#contact"
+            href="/#contact"
             className="mt-6 inline-flex rounded-xl bg-primaryGold px-6 py-3 font-bold text-darkText transition hover:opacity-90"
           >
             Enquire Now
