@@ -4,7 +4,7 @@ const admissionFormUrl =
 
 export default function AdmissionsCTA() {
   return (
-    <section className="bg-gradient-to-r from-darkBlue via-primaryBlue to-sky-700 py-16 text-white">
+    <section className="bg-gradient-to-r from-darkBlue via-primaryBlue to-sky-700 py-16 text-white border-y-[6px] border-primaryGold">
       <div className="mx-auto max-w-5xl px-4 text-center sm:px-6 lg:px-8">
         <p className="text-sm font-semibold uppercase tracking-[0.28em] text-sky-100">Admissions Open</p>
         <h2 className="mt-4 text-3xl font-black sm:text-4xl md:text-5xl">2026–27</h2>

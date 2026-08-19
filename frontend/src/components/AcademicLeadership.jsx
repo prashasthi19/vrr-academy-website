@@ -27,7 +27,7 @@ As the Founder of VRR Career Academy, my commitment is to provide quality educat
     id: 'principal',
     role: 'Principal',
     name: 'Dr. P. Nageswara Rao',
-    title: 'Principal, Shanti Niketan PU College',
+    title: 'Principal, VRR Career Academy',
     qualifications: 'M.Sc., M.Ed., KSET, Ph.D. in Mathematics',
     image: '/Principal.png',
     excerpt: 'At VRR Career Academy, our academic approach is built around strong fundamentals, regular assessments, exam-oriented preparation, and continuous improvement.',
@@ -67,7 +67,9 @@ export default function AcademicLeadership() {
   }
 
   return (
-    <section id="leadership" className="bg-slate-50 py-16 sm:py-20">
+    <section 
+        id="leadership" 
+        className="border-t-[6px] border-primaryGold bg-slate-50 py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl font-black text-darkText sm:text-4xl">

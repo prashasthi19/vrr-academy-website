@@ -5,6 +5,8 @@ import Footer from './components/Footer'
 
 // Lazy load pages
 const Home = lazy(() => import('./pages/Home'))
+const About = lazy(() => import('./pages/About'))
+const VRRCourses = lazy(() => import('./pages/VRRCourses'))
 
 // Loading component
 const PageLoader = () => (
@@ -21,12 +23,14 @@ const PageLoader = () => (
 function App() {
   return (
     <Router>
-      <div className="min-h-screen flex flex-col bg-white">
+      <div className="min-h-screen flex flex-col bg-white border-[12px] border-primaryGold">
         <Navbar />
         <main className="flex-1 pt-16">
           <Suspense fallback={<PageLoader />}>
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/courses" element={<VRRCourses />} />
             </Routes>
           </Suspense>
         </main>

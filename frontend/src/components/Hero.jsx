@@ -4,7 +4,9 @@ const admissionFormUrl =
 
 export default function Hero() {
   return (
-    <section id="home" className="flex min-h-screen items-center bg-[radial-gradient(circle_at_top_left,_rgba(96,165,250,0.25),_transparent_30%),linear-gradient(135deg,#0a3aab_0%,#0a2d8b_35%,#081d5d_100%)] pt-36 pb-16 text-white">
+    <section 
+      id="home" 
+      className="flex min-h-screen items-center bg-[radial-gradient(circle_at_top_left,_rgba(96,165,250,0.25),_transparent_30%),linear-gradient(135deg,#0a3aab_0%,#0a2d8b_35%,#081d5d_100%)] pt-36 pb-16 text-white border-t-[12px] border-primaryGold">
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-[1.2fr_0.8fr]">
           <div className="animate-fade-in space-y-6">

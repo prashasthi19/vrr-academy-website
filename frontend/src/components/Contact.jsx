@@ -55,7 +55,9 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="bg-white py-16">
+    <section 
+      id="contact" 
+      className="border-t-[6px] border-primaryGold bg-white py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-12 md:grid-cols-2">
           <div>
@@ -69,12 +71,12 @@ export default function Contact() {
                   <h3 className="mb-2 text-lg font-bold text-darkText">Address</h3>
                   <p className="text-slate-600">
                     <a
-                      href="https://maps.google.com/?q=52nd+Floor,+Vinayaka+Complex,+11,+Kodigehalli+-+Thindlu+Main+Road,+Near+SVVK+School,+Sahakar+Nagar,+Kodigehalli,+Bangalore,+Karnataka+560092"
+                      href="https://maps.google.com/?q=2nd+Floor,+Vinayaka+Complex,+11,+Kodigehalli+-+Thindlu+Main+Road,+Near+SVVK+School,+Sahakar+Nagar,+Kodigehalli,+Bangalore,+Karnataka+560092"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="underline hover:text-primaryBlue"
                     >
-                      52nd Floor, Vinayaka Complex<br />
+                      2nd Floor, Vinayaka Complex<br />
                       11, Kodigehalli - Thindlu Main Road<br />
                       Near SVVK School, Sahakar Nagar<br />
                       Kodigehalli, Bangalore<br />

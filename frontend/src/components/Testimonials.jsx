@@ -24,7 +24,7 @@ export default function Testimonials() {
   ]
 
   return (
-    <section className="bg-gray py-16">
+    <section className="border-t-[6px] border-primaryGold bg-slate-50 py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-12 text-center">
           <p className="text-sm font-bold uppercase tracking-[0.2em] text-primaryBlue">Testimonials</p>

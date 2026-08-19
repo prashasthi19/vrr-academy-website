@@ -2,7 +2,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-darkBlue py-12 text-white">
+    <footer className="border-t-[6px] border-primaryGold bg-darkBlue py-12 text-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-8 grid gap-8 md:grid-cols-4">
           <div>
@@ -49,8 +49,8 @@ export default function Footer() {
               <li>💬 <a href="https://wa.me/919611747003" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">WhatsApp</a></li>
               <li>📧 <a href="mailto:vrr.career.academy@gmail.com" className="underline hover:text-white">vrr.career.academy@gmail.com</a></li>
               <li>
-                📍 <a href="https://maps.google.com/?q=52nd+Floor,+Vinayaka+Complex,+11,+Kodigehalli+-+Thindlu+Main+Road,+Near+SVVK+School,+Sahakar+Nagar,+Kodigehalli,+Bangalore,+Karnataka+560092" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">
-                  52nd Floor, Vinayaka Complex, 11, Kodigehalli - Thindlu Main Road, Near SVVK School, Sahakar Nagar, Kodigehalli, Bangalore, Karnataka 560092
+                📍 <a href="https://maps.google.com/?q=2nd+Floor,+Vinayaka+Complex,+11,+Kodigehalli+-+Thindlu+Main+Road,+Near+SVVK+School,+Sahakar+Nagar,+Kodigehalli,+Bangalore,+Karnataka+560092" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">
+                  2nd Floor, Vinayaka Complex, 11, Kodigehalli - Thindlu Main Road, Near SVVK School, Sahakar Nagar, Kodigehalli, Bangalore, Karnataka 560092
                 </a>
               </li>
             </ul>

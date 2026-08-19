@@ -43,7 +43,9 @@ export default function WhyChooseUs() {
   ]
 
   return (
-    <section id="about" className="bg-white py-16">
+    <section 
+      id="about" 
+      className="border-t-[6px] border-primaryGold bg-white py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-12 text-center">
           <p className="text-sm font-bold uppercase tracking-[0.2em] text-primaryBlue">Why VRR Career Academy</p>

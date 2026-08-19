@@ -6,7 +6,9 @@ const streams = [
 
 export default function IntegratedProgram() {
   return (
-    <section id="integrated" className="bg-white py-16">
+    <section 
+      id="integrated" 
+      className="border-t-[12px] border-primaryGold bg-white py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <p className="text-sm font-bold uppercase tracking-[0.22em] text-primaryBlue">Integrated Academic Program</p>

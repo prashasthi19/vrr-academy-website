@@ -7,7 +7,6 @@ const Courses = lazy(() => import('../components/Courses'))
 const IntegratedProgram = lazy(() => import('../components/IntegratedProgram'))
 const WhyChooseUs = lazy(() => import('../components/WhyChooseUs'))
 const Features = lazy(() => import('../components/Features'))
-const AcademicLeadership = lazy(() => import('../components/AcademicLeadership'))
 const Testimonials = lazy(() => import('../components/Testimonials'))
 const Contact = lazy(() => import('../components/Contact'))
 const AdmissionsProcess = lazy(() => import('../components/AdmissionsProcess'))
@@ -57,10 +56,6 @@ export default function Home() {
 
       <Suspense fallback={<SectionLoader />}>
         <Features />
-      </Suspense>
-
-      <Suspense fallback={<SectionLoader />}>
-        <AcademicLeadership />
       </Suspense>
 
       <Suspense fallback={<SectionLoader />}>

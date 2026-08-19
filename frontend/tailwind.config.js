@@ -10,8 +10,9 @@ export default {
         primaryBlue: '#1D4ED8',
         darkBlue: '#1E3A8A',
         lightBlue: '#DBEAFE',
+        primaryGold: '#D4A017',
         white: '#FFFFFF',
-        gray: '#F3F4F6',
+        gray: '#ebebeb',
         darkText: '#111827',
       },
       fontFamily: {
