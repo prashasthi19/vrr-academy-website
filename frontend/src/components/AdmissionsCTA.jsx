@@ -7,7 +7,7 @@ export default function AdmissionsCTA() {
     <section className="bg-gradient-to-r from-darkBlue via-primaryBlue to-sky-700 py-16 text-white border-y-[6px] border-primaryGold">
       <div className="mx-auto max-w-5xl px-4 text-center sm:px-6 lg:px-8">
         <p className="text-sm font-semibold uppercase tracking-[0.28em] text-sky-100">Admissions Open</p>
-        <h2 className="mt-4 text-3xl font-black sm:text-4xl md:text-5xl">2026–27</h2>
+        <h2 className="mt-4 text-3xl font-black sm:text-4xl md:text-5xl">2027–28</h2>
         <p className="mt-3 text-xl font-semibold text-sky-100">PU Integrated Program</p>
         <p className="mt-4 text-lg text-sky-50">PCMB | PCMC | PCME</p>
         <p className="mt-2 text-lg text-sky-50">PU BOARDS + KCET + JEE + NEET</p>

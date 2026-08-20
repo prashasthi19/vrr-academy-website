@@ -1,7 +1,7 @@
 const streams = [
-  { name: 'PCMB', description: 'Physics • Chemistry • Mathematics • Biology', focus: 'PU Boards + KCET + NEET' },
-  { name: 'PCMC', description: 'Physics • Chemistry • Mathematics • Computer Science', focus: 'PU Boards + KCET + JEE' },
-  { name: 'PCME', description: 'Physics • Chemistry • Mathematics • Electronics', focus: 'PU Boards + KCET + JEE' }
+  { name: 'PCMB', description: 'Physics • Chemistry • Mathematics • Biology', focus: 'PU Boards + KCET (& JEE/NEET for interested students)' },
+  { name: 'PCMC', description: 'Physics • Chemistry • Mathematics • Computer Science', focus: 'PU Boards + KCET (& JEE for interested students)' },
+  { name: 'PCME', description: 'Physics • Chemistry • Mathematics • Electronics', focus: 'PU Boards + KCET (& JEE for interested students)' }
 ]
 
 export default function IntegratedProgram() {

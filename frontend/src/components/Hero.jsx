@@ -42,7 +42,7 @@ export default function Hero() {
                 Admissions Open
               </span>
               <span className="text-base font-bold uppercase tracking-[0.12em] text-white sm:text-lg">
-                2026–27
+                2027–28
               </span>
             </div>
 

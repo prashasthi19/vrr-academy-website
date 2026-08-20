@@ -2,21 +2,21 @@ const programs = [
   {
     name: 'PCMB',
     subjects: 'Physics • Chemistry • Mathematics • Biology',
-    focus: 'PU Boards + KCET + JEE + NEET',
+    focus: 'PU Boards + KCET (& JEE/NEET for interested students)',
     description: 'A complete science pathway for students aiming for strong board performance along with competitive exam readiness.',
     accent: 'from-blue-600 to-blue-500'
   },
   {
     name: 'PCMC',
     subjects: 'Physics • Chemistry • Mathematics • Computer Science',
-    focus: 'PU Boards + KCET + JEE',
+    focus: 'PU Boards + KCET (& JEE for interested students)',
     description: 'Built for students who are oriented toward mathematics, technology and engineering-focused academic planning.',
     accent: 'from-indigo-600 to-indigo-500'
   },
   {
     name: 'PCME',
     subjects: 'Physics • Chemistry • Mathematics • Electronics',
-    focus: 'PU Boards + KCET + JEE',
+    focus: 'PU Boards + KCET (& JEE for interested students)',
     description: 'A focused stream for students interested in high-value technical pathways and structured academic preparation.',
     accent: 'from-sky-600 to-cyan-500'
   }
